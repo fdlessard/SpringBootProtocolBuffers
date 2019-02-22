@@ -1,0 +1,21 @@
+syntax = "proto3";
+package fdlessard;
+option java_package = "io.fdlessard.codebites.customer.proto.model";
+option java_outer_classname = "Proto";
+
+message Customer {
+    int64 id = 1;
+    string lastName = 2;
+    string firstName = 3;
+    string company = 4;
+}
+
+message Address {
+    int64 id = 1;
+    string number = 2;
+    string street = 3;
+    string city = 4;
+    string postalCode = 5;
+    string province = 6;
+    string country = 7;
+}
